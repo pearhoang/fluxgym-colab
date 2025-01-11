@@ -1,9 +1,9 @@
 import os
 import sys
 os.environ["HF_HUB_ENABLE_HF_TRANSFER"] = "1"
-
+os.environ['GRADIO_ANALYTICS_ENABLED'] = '0'
 sys.path.insert(0, os.getcwd())
-
+sys.path.append('/content/fluxgym-colab/sd-scripts')
 import subprocess
 import gradio as gr
 from PIL import Image
